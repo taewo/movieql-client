@@ -3,3 +3,26 @@
 2.  Apollo Boost는 GraphQl 클라이언트를 가지기 위한 모든걸 셋업해주기 때문에 심플하게 클라이언트를 구성할 수 있다.
 3. apolloClient 생성, ApolloProvider 연결
 4. chrome apollo dev tool 설치
+5. graphql-tag는 우리가 프론트엔드에 graphql을 작성하는 방법.
+    https://github.com/apollographql/graphql-tag에서 사용법 확인
+
+    import gql from 'graphql-tag';
+
+    const query = gql`
+    {
+        user(id: 5) {
+        firstName
+        lastName
+        }
+    }
+    `
+
+    이런 문법으로 쓰인다.
+
+6. $ yarn add react-helmet
+    만약 graphql 스키마를 잊었다면 개발자도구를 통해 쿼리를 분석하자
+
+7. queries.js에 쿼리작성, Home.js에 react-apollo import, queries의 변수 적용
+
+
+
