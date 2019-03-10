@@ -13,7 +13,7 @@ export const HOME_PAGE = gql`
 `;
 
 export const MOVIE_DETAILS = gql`
-    query getMovieDetails($movieId: Int!) {
+    query ($movieId: Int!) {
         movie(id: $movieId){
             id
             medium_cover_image
