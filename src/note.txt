@@ -25,4 +25,10 @@
 7. queries.js에 쿼리작성, Home.js에 react-apollo import, queries의 변수 적용
 
 
+8. {withRouter} from react-router-dom 을 이용해 라우터의 history 객체 속성에 접근할 수 있다.
+    ex) const { match, location, history } = this.props;
+    그런데 App.js에서 Home.js Detail.js가 이미  Route 컴포넌트로 사용했기에 withRouter 를 쓰지 않아도 된다.
+    withRouter는 라우트로 사용되지 않는 컴포넌트에 대해서 location, history, match 를 사용할 수 있다.
+
+9. 
 
